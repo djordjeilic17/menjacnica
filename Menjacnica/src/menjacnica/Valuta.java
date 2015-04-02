@@ -11,12 +11,20 @@ public class Valuta {
 		return naziv;
 	}
 	public void setNaziv(String naziv) {
+		if (naziv == null || naziv.isEmpty()) { 
+			throw new RuntimeException("Molim vas, unesite naziv."); 
+		} 
+
 		this.naziv = naziv;
 	}
 	public String getOznaka() {
 		return oznaka;
 	}
 	public void setOznaka(String oznaka) {
+		if (oznaka == null || oznaka.isEmpty()) { 
+			throw new RuntimeException("Molim vas, unesite skraceni naziv."); 
+		} 
+
 		this.oznaka = oznaka;
 	}
 	
