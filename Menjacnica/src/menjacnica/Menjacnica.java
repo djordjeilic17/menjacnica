@@ -9,7 +9,14 @@ public class Menjacnica implements Interfejs {
 
 	public void dodajKurs(GregorianCalendar datum, double prodajniKurs,
 			double srednjiKurs, double kupovniKurs) {
-		// TODO Auto-generated method stub
+		
+		
+		Kurs kurs = new Kurs(); 
+		kurs.setDatum(datum); 
+		kurs.setKupovniKurs(kupovniKurs); 
+		kurs.setProdajniKurs(prodajniKurs); 
+		kurs.setSrednjiKurs(srednjiKurs); 
+
 		
 	}
 
